@@ -12,6 +12,8 @@ public class MouvementRigidbodyForces : MonoBehaviour
         // Prends une réference au Rigidbody attaché a cet objet.
         _rb = GetComponent<Rigidbody>();
 
-        _rb.AddForce(forceInitiale);
+       
+
+        _rb.AddForce(forceInitiale, ForceMode.VelocityChange);
     }
 }
