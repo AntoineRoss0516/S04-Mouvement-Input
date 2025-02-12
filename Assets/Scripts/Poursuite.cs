@@ -12,4 +12,9 @@ public class Poursuite : MonoBehaviour
         transform.LookAt(poissonCible.transform);
         transform.Translate(0, 0, vitesse * Time.deltaTime, Space.Self);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        
+    }
 }
